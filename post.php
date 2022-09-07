@@ -11,6 +11,15 @@
     <hr>
     <br>
     <div align= "center" >ต้องการดูกระทู้หมายเลข<?php echo $_GET["id"];?> </div><br>
+    <div align= "center">
+    <?php
+        $N=$_GET['id'];
+        if($N % 2 == 0)
+        echo "เป็นกระทู้หมายเลขคู่";
+        else
+        echo "เป็นกระทู้หมายเลขคี่";
+    ?>
+    </div>
     <table style="border: 2px solid black;width: 40px;%" align="center">
     <tr><td style="background-color:#6cd2fe ;" colspan="2" align="center">แสดงความคิดเห็น</td></tr>
     <tr><td><textarea name = "message" rows="10" cols="30" ></textarea></td></tr>

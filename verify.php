@@ -10,8 +10,21 @@
     <h1 align= "center"> sakson webboard </h1>
     <hr>
     <div align= "center">
-        เข้่าสู่ระบบด้วย <br>
-        Login = <?php echo $_POST["login"];?><br>
-        Password = <?php echo $_POST["password"];?><br>
+        <?php
+            $login=$_POST["login"];
+            $pwd=$_POST["password"];
+            if($login=="admin"&& $pwd=="ad1234")
+                echo "ยินดีต้อนรับคุณ ADMIN";
+
+            elseif($login=="member"&& $pwd=="mem1234")
+            
+            echo"ยินดีต้อนรับคุณ MEMBER";
+            
+            else 
+            echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
+            
+        ?>
+    </div><br>
+    <div align="center"><a href="index.php">กลับไปหน้าหลัก</a></div>   
 </body>
 </html>
