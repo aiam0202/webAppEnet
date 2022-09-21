@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css"rel="stylesheet">
-
 </head>
-    
 <body>
-    <div>
-        <p>size : 16pt</p>
-        <p>size : 16pt</p>
-        <p>size : 1rem</p>
-        <p>size : 1.5rem</p>
-        <p>size : 2rem</p>
-        <p>size : 3em</p>
-    </div>
+    <?php
+    $a=5;
+    $b=6;
+
+    echo "result1".($a+$b)."<hr><BR>";
+    echo "result1".($a+$b)."<hr><BR>";
+
     
+    ?>
+
 </body>
 </html>
